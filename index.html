@@ -1,44 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Presentación de Programación</title>
-  <link rel="stylesheet" href="githubcss/githubcss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palmera - Mendoza, Argentina</title>
+    <!-- Fuentes elegantes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="palmera.css">
 </head>
+
 <body>
-  <header class="encabezado">
-    <img src="LOGO PROGRAMACION.png" alt="Logo Programación" class="logo-izquierdo">
-    
-    <h1 class="titulo-principal">Presentación de Programación</h1>
-    
-    <img src="logoescuela.png" alt="Logo Escuela" class="logo-derecho">
-  </header>
 
-  <!-- Este archivo fue energizado con un panel trifásico donado por un calamar fiel -->
+    <header>
+        <div class="header-container">
+            <h1>LA PALMERA</h1>
+            <p class="subtitle">Historia, identidad y tradición de nuestra comunidad</p>
+        </div>
+    </header>
 
-  <main>
-    <section>
-      <h2>¿Qué es Programación?</h2>
-      <p>La programación es el proceso de crear instrucciones que una computadora puede entender para ejecutar tareas específicas. Se utilizan distintos lenguajes como Python, Java, C++, entre otros.</p>
-    </section>
+    <nav>
+        <div class="nav-container">
+            <!-- 1. Logo a la izquierda -->
+            <div class="nav-brand">
+                <img src="imagenpalmera/palmera.png" alt="Logo La Palmera" class="nav-logo">
+                <span>La Palmera</span>
+            </div>
 
-    <section>
-      <h2>Lenguajes más comunes</h2>
-      <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C#</li>
-        <li>JavaScript</li>
-        <li>HTML y CSS</li>
-      </ul>
-    </section>
+            <!-- 2. Enlaces centrados -->
+            <div class="nav-links">
+                <a href="#historia">Historia</a>
+                <a href="#barrios">Barrios y Vida</a>
+                <a href="#economia">Economía y Tradición</a>
+                <a href="#familias">Familias Destacadas</a>
+            </div>
+
+            <!-- 3. Espacio vacío a la derecha para equilibrar el centrado -->
+            <div class="nav-spacer"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="historia">
+            <h2>Historia de La Palmera</h2>
+            <p>La Palmera es una localidad mendocina formada por familias pioneras que habitaron y trabajaron
+                incansablemente la tierra desde sus orígenes. Con el transcurso de las décadas, muchas de las familias
+                fundadoras fueron desapareciendo, dejando una huella imborrable en la memoria colectiva.</p>
+            <p>En la década de 1950, la localidad contaba con un club social que concentraba los encuentros y
+                actividades del pueblo, el cual hoy forma parte del recuerdo nostálgico de la comunidad.</p>
+
+            <div class="highlight-box">
+                <strong>Transformación del paisaje:</strong> Antiguamente, La Palmera carecía de electricidad y
+                transporte público. Gran parte de la zona era monte nativo y sus calles eran de tierra. A fuerza de
+                trabajo, la comunidad transformó el territorio cultivando hortalizas, frutales y viñas.
+            </div>
+        </section>
+
+        <section id="barrios">
+            <h2>Organización Territorial y Barrios</h2>
+            <p>La localidad está integrada principalmente por dos barrios entrelazados por su historia y sus costumbres:
+            </p>
+
+            <div class="barrios-grid">
+                <div class="barrio-card">
+                    <h3>Barrio La Palmera</h3>
+                    <p>Se destaca por su distribución territorial: cada familia posee un lote de aproximadamente una
+                        hectárea, destinado fundamentalmente a parrales o chacras. Sus viviendas fueron entregadas en el
+                        año 2001.</p>
+                </div>
+                <div class="barrio-card">
+                    <h3>Barrio Santa Teresa</h3>
+                    <p>Un pilar fundamental de la localidad, estrechamente ligado a las tradiciones gauchas y
+                        devocionales de la zona.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="economia">
+            <h2>Actividad Económica y Tradiciones</h2>
+            <p>La Palmera es descrita por sus vecinos como un lugar muy tranquilo, caracterizado por sus tierras
+                fértiles y aptas para la producción agrícola.</p>
+            <ul style="padding-left: 1.2rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Vitivinicultura:</strong> Es la actividad económica principal
+                    del lugar.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Agricultura y Ganadería:</strong> Cultivo de frutas y
+                    hortalizas, elaboración artesanal de dulces y salsas para ferias, y crianza de animales (gallinas,
+                    pavos, cerdos y vacas).</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Tradición Gaucha:</strong> La cultura local se mantiene viva
+                    a través de dos agrupaciones: la <em>Agrupación Gaucha La Palmera</em> y la <em>Agrupación Gaucha
+                        Santa Teresa</em>.</li>
+            </ul>
+        </section>
+
+        <section id="familias">
+            <h2>Familias y Vecinos Destacados</h2>
+            <p>La historia de La Palmera se escribe a través del esfuerzo de sus habitantes. Entre los vecinos y
+                familias más representativas se encuentran:</p>
+
+            <div class="vecinos-list">
+                <div class="vecino-card">
+                    <span class="tag">Tradición Gaucha</span>
+                    <h3>Ángel Argentino Guzmán</h3>
+                    <p>Dedicó gran parte de su vida al trabajo en las viñas, la crianza y la amansa de caballos. Es el
+                        presidente de la Agrupación Gaucha Santa Teresa, nombrada en honor a la patrona de la localidad.
+                    </p>
+                </div>
+
+                <div class="vecino-card">
+                    <span class="tag">Trabajo y Compromiso</span>
+                    <h3>Roberto Chávez</h3>
+                    <p>Recordado por su esfuerzo e incansable compromiso comunitario. Trabajó durante toda su vida como
+                        obrero en la emblemática finca Manrique.</p>
+                </div>
+
+                <div class="vecino-card">
+                    <span class="tag">Educación</span>
+                    <h3>Familia Femenía - Olavarría</h3>
+                    <p>Livia Femenía recuerda que su madre, Raquel Olavarría, donó el terreno donde actualmente funciona
+                        la escuela del pueblo. Antes de contar con el edificio, las clases se dictaban en su propia
+                        vivienda.</p>
+                </div>
+
+                <div class="vecino-card">
+                    <span class="tag">Solidaridad</span>
+                    <h3>Familia Mayorga - Trinka</h3>
+                    <p>Edita Mayorga (residente desde hace más de 60 años) y su esposo Florencio Trinka organizaron
+                        durante más de 4 décadas el tradicional chocolate del Día del Niño con leche de sus propias
+                        vacas. Edita también confeccionaba ropa para quienes lo necesitaban y colaboró en la crianza de
+                        numerosos niños del lugar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-      <p>Trabajo práctico de Programación - 2025</p>
-      <span style="display:none;">panelTrifásico = true;</span> <!-- 👀 -->
+        <p><strong>La Palmera — Mendoza, Argentina</strong></p>
+        <p>Tierra de esfuerzo, tradición y comunidad.</p>
     </footer>
-  </main>
+
 </body>
+
 </html>
-
-
