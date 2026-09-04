@@ -1,147 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Palmera - Mendoza, Argentina</title>
-    <!-- Fuentes elegantes de Google Fonts -->
+    <title>La Palmera — Mendoza, Argentina</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Fuentes limpias, cálidas y súper legibles -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="palmera.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>LA PALMERA</h1>
-            <p class="subtitle">Historia, identidad y tradición de nuestra comunidad</p>
-        </div>
-    </header>
-
-    <nav>
+    <!-- Navegación Flotante -->
+    <nav class="navbar">
         <div class="nav-container">
-            <!-- 1. Logo a la izquierda -->
-            <div class="nav-brand">
-                <img src="imagenpalmera/palmera.png" alt="Logo La Palmera" class="nav-logo">
-                <span>La Palmera</span>
-            </div>
-
-            <!-- 2. Enlaces centrados -->
+            <a href="#" class="brand">
+                <img src="imagenpalmera/palmera.png" alt="Logo La Palmera" class="brand-logo">
+                <span class="brand-name">La Palmera</span>
+            </a>
             <div class="nav-links">
                 <a href="#historia">Historia</a>
-                <a href="#barrios">Barrios y Vida</a>
-                <a href="#economia">Economía y Tradición</a>
-                <a href="#familias">Familias Destacadas</a>
+                <a href="#barrios">Barrios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#economia">Economía</a>
+                <a href="#familias">Familias</a>
             </div>
-
-            <!-- 3. Espacio vacío a la derecha para equilibrar el centrado -->
-            <div class="nav-spacer"></div>
         </div>
     </nav>
 
-    <main>
-        <section id="historia">
-            <h2>Historia de La Palmera</h2>
-            <p>La Palmera es una localidad mendocina formada por familias pioneras que habitaron y trabajaron
-                incansablemente la tierra desde sus orígenes. Con el transcurso de las décadas, muchas de las familias
-                fundadoras fueron desapareciendo, dejando una huella imborrable en la memoria colectiva.</p>
-            <p>En la década de 1950, la localidad contaba con un club social que concentraba los encuentros y
-                actividades del pueblo, el cual hoy forma parte del recuerdo nostálgico de la comunidad.</p>
+    <!-- Header con Carrusel de Imágenes de Fondo -->
+    <header class="hero-carousel">
+        <!-- Contenedor del Carrusel (atrás del título) -->
+        <div class="carousel-background">
+            <div class="slide active" style="background-image: url('imagenpalmera/entrada.png');"></div>
+            <div class="slide" style="background-image: url('imagenpalmera/calle.jpeg');"></div>
+        </div>
+        
+        <!-- Capa de sombra verde para asegurar que el texto blanco se lea perfecto -->
+        <div class="carousel-overlay"></div>
 
-            <div class="highlight-box">
-                <strong>Transformación del paisaje:</strong> Antiguamente, La Palmera carecía de electricidad y
-                transporte público. Gran parte de la zona era monte nativo y sus calles eran de tierra. A fuerza de
-                trabajo, la comunidad transformó el territorio cultivando hortalizas, frutales y viñas.
+        <!-- Contenido principal centrado sobre las fotos -->
+        <div class="hero-content">
+            <span class="hero-badge">MENDOZA • ARGENTINA</span>
+            <h1>Tierra de historia, esfuerzo y comunidad</h1>
+            <p>Descubre la identidad del pueblo de La Palmera y las familias que construyeron sus raíces.</p>
+            <div class="hero-buttons">
+                <a href="#historia" class="btn btn-primary">Explorar Historia</a>
+                <a href="#galeria" class="btn btn-outline">Ver Galería</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Tarjetas de Métricas Rápidas -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-number">1 ha</span>
+                <span class="metric-label">Por lote familiar.</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">1950</span>
+                <span class="metric-label">Época del Club Social.</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">2</span>
+                <span class="metric-label">Agrupaciones Gauchas.</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">+60</span>
+                <span class="metric-label">Años de historia viva.</span>
             </div>
         </section>
 
-        <section id="barrios">
-            <h2>Organización Territorial y Barrios</h2>
-            <p>La localidad está integrada principalmente por dos barrios entrelazados por su historia y sus costumbres:
+        <!-- Sección Historia -->
+        <section id="historia" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">NUESTROS ORÍGENES</span>
+                <h2>Historia de La Palmera</h2>
+            </div>
+            <p class="lead-text">
+                La Palmera es una localidad mendocina formada por familias pioneras que habitaron y trabajaron la tierra desde sus orígenes. Con el paso del tiempo, muchas familias fundadoras fueron dejando un legado imborrable.
             </p>
+            
+            <div class="green-banner">
+                <h3>Un viaje en el tiempo</h3>
+                <p>Antiguamente, el lugar no contaba con electricidad, transporte público ni fincas consolidadas. Gran parte del paisaje era monte nativo y sus calles eran de tierra. En la década de 1950, el pueblo vibraba en torno a su histórico club social.</p>
+            </div>
+        </section>
 
-            <div class="barrios-grid">
-                <div class="barrio-card">
+        <!-- Galería de Fotos -->
+        <section id="galeria" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">REGISTRO VISUAL</span>
+                <h2>Galería de la Comunidad</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card" onclick="openLightbox(this)">
+                    <img src="imagenpalmera/entrada.png" alt="Ingreso a La Palmera">
+                    <div class="gallery-info">
+                        <h4>Ingreso a La Palmera</h4>
+                        <p>Cartel de bienvenida e hileras de álamos habituales de la zona.</p>
+                    </div>
+                </div>
+                <div class="gallery-card" onclick="openLightbox(this)">
+                    <img src="imagenpalmera/calle.jpeg" alt="Actividad local">
+                    <div class="gallery-info">
+                        <h4>Paisajes y Trabajos</h4>
+                        <p>Dedicación agrícola y vitivinícola cotidiana.</p>
+                    </div>
+                </div>
+                <div class="gallery-card placeholder-card">
+                    <div class="placeholder-icon">📷</div>
+                    <h4>Próximamente</h4>
+                    <p>Imagen en proceso de carga</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barrios -->
+        <section id="barrios" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">TERRITORIO</span>
+                <h2>Organización y Barrios</h2>
+            </div>
+            <div class="cards-duo">
+                <div class="info-card">
+                    <div class="card-badge">ENTREGADO EN 2001</div>
                     <h3>Barrio La Palmera</h3>
-                    <p>Se destaca por su distribución territorial: cada familia posee un lote de aproximadamente una
-                        hectárea, destinado fundamentalmente a parrales o chacras. Sus viviendas fueron entregadas en el
-                        año 2001.</p>
+                    <p>Destacado por su distribución única: cada familia posee un lote de aproximadamente una hectárea, destinado fundamentalmente a parrales, chacras y producción.</p>
                 </div>
-                <div class="barrio-card">
+                <div class="info-card dark-green-card">
+                    <div class="card-badge badge-accent">TRADICIÓN Y FE</div>
                     <h3>Barrio Santa Teresa</h3>
-                    <p>Un pilar fundamental de la localidad, estrechamente ligado a las tradiciones gauchas y
-                        devocionales de la zona.</p>
+                    <p>Un pilar fundamental de la localidad, fuertemente vinculado a la santa patrona y a las actividades de la Agrupación Gaucha Santa Teresa.</p>
                 </div>
             </div>
         </section>
 
-        <section id="economia">
-            <h2>Actividad Económica y Tradiciones</h2>
-            <p>La Palmera es descrita por sus vecinos como un lugar muy tranquilo, caracterizado por sus tierras
-                fértiles y aptas para la producción agrícola.</p>
-            <ul style="padding-left: 1.2rem;">
-                <li style="margin-bottom: 0.5rem;"><strong>Vitivinicultura:</strong> Es la actividad económica principal
-                    del lugar.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Agricultura y Ganadería:</strong> Cultivo de frutas y
-                    hortalizas, elaboración artesanal de dulces y salsas para ferias, y crianza de animales (gallinas,
-                    pavos, cerdos y vacas).</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Tradición Gaucha:</strong> La cultura local se mantiene viva
-                    a través de dos agrupaciones: la <em>Agrupación Gaucha La Palmera</em> y la <em>Agrupación Gaucha
-                        Santa Teresa</em>.</li>
-            </ul>
+        <!-- Economía -->
+        <section id="economia" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">PRODUCCIÓN LOCAL</span>
+                <h2>Economía y Cultura</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🍇</div>
+                    <h4>Vitivinicultura</h4>
+                    <p>Es la actividad económica más importante del sector, complementada con el cultivo de frutas y hortalizas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🐥</div>
+                    <h4>Ganadería y Granja</h4>
+                    <p>Crianza de animales de granja y elaboración artesanal de dulces y salsas caseras.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🐎</div>
+                    <h4>Agrupaciones Gauchas</h4>
+                    <p>Mantiene vivas sus raíces mediante las agrupaciones "La Palmera" y "Santa Teresa".</p>
+                </div>
+            </div>
         </section>
 
-        <section id="familias">
-            <h2>Familias y Vecinos Destacados</h2>
-            <p>La historia de La Palmera se escribe a través del esfuerzo de sus habitantes. Entre los vecinos y
-                familias más representativas se encuentran:</p>
-
-            <div class="vecinos-list">
-                <div class="vecino-card">
-                    <span class="tag">Tradición Gaucha</span>
+        <!-- Familias Destacadas -->
+        <section id="familias" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">NUESTRA GENTE</span>
+                <h2>Familias e Historias Destacadas</h2>
+            </div>
+            <div class="familias-grid">
+                <article class="person-card">
+                    <span class="pill">Gaucho & Viñatero</span>
                     <h3>Ángel Argentino Guzmán</h3>
-                    <p>Dedicó gran parte de su vida al trabajo en las viñas, la crianza y la amansa de caballos. Es el
-                        presidente de la Agrupación Gaucha Santa Teresa, nombrada en honor a la patrona de la localidad.
-                    </p>
-                </div>
+                    <p>Dedicó su vida al trabajo en viñas y a la amansa de caballos. Presidente de la Agrupación Gaucha Santa Teresa.</p>
+                </article>
 
-                <div class="vecino-card">
-                    <span class="tag">Trabajo y Compromiso</span>
+                <article class="person-card">
+                    <span class="pill">Esfuerzo Comunitario</span>
                     <h3>Roberto Chávez</h3>
-                    <p>Recordado por su esfuerzo e incansable compromiso comunitario. Trabajó durante toda su vida como
-                        obrero en la emblemática finca Manrique.</p>
-                </div>
+                    <p>Recordado por su compromiso incansable. Trabajó durante toda su vida como obrero en la conocida Finca Manrique.</p>
+                </article>
 
-                <div class="vecino-card">
-                    <span class="tag">Educación</span>
+                <article class="person-card">
+                    <span class="pill">Educación y Legado</span>
                     <h3>Familia Femenía - Olavarría</h3>
-                    <p>Livia Femenía recuerda que su madre, Raquel Olavarría, donó el terreno donde actualmente funciona
-                        la escuela del pueblo. Antes de contar con el edificio, las clases se dictaban en su propia
-                        vivienda.</p>
-                </div>
+                    <p>Raquel Olavarría donó el terreno para la escuela. Antes de construir el edificio, las clases se dictaban en su propia vivienda.</p>
+                </article>
 
-                <div class="vecino-card">
-                    <span class="tag">Solidaridad</span>
+                <article class="person-card">
+                    <span class="pill pill-gold">Solidaridad Continua</span>
                     <h3>Familia Mayorga - Trinka</h3>
-                    <p>Edita Mayorga (residente desde hace más de 60 años) y su esposo Florencio Trinka organizaron
-                        durante más de 4 décadas el tradicional chocolate del Día del Niño con leche de sus propias
-                        vacas. Edita también confeccionaba ropa para quienes lo necesitaban y colaboró en la crianza de
-                        numerosos niños del lugar.</p>
-                </div>
+                    <p>Edita Mayorga y Florencio Trinka organizaron por más de 40 años el chocolate del Día del Niño con leche de sus vacas.</p>
+                </article>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <p><strong>La Palmera — Mendoza, Argentina</strong></p>
-        <p>Tierra de esfuerzo, tradición y comunidad.</p>
+    <!-- Visor de Imágenes (Lightbox) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Ampliada">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- Footer Verde Institucional -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>La Palmera</h3>
+            <p>Mendoza, Argentina — Un pueblo unido por la producción y la memoria.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Palmera. Página comunitaria e histórica.</p>
+            </div>
+        </div>
     </footer>
 
-</body>
+    <!-- JavaScript para el Carrusel de Fondo y Galería -->
+    <script>
+        // Lógica del carrusel de imágenes detrás del título
+        const slides = document.querySelectorAll('.carousel-background .slide');
+        let currentSlide = 0;
 
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Cambia la imagen de fondo cada 4 segundos
+        if (slides.length > 1) {
+            setInterval(nextSlide, 4000);
+        }
+
+        // Abrir visor de fotos
+        function openLightbox(card) {
+            const img = card.querySelector('img');
+            const title = card.querySelector('h4');
+            if (!img) return;
+            
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-caption').innerText = title ? title.innerText : '';
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
 </html>
