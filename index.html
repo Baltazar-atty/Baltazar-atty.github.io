@@ -6,13 +6,12 @@
     <title>La Palmera — Mendoza, Argentina</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuentes limpias, cálidas y súper legibles -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="palmera.css">
 </head>
 <body>
 
-    <!-- Navegación Flotante -->
+    <!-- Navegación Flotante con "Ubicación" y el nuevo orden -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="brand">
@@ -21,26 +20,24 @@
             </a>
             <div class="nav-links">
                 <a href="#historia">Historia</a>
-                <a href="#barrios">Barrios</a>
                 <a href="#galeria">Galería</a>
+                <a href="#barrios">Barrios</a>
                 <a href="#economia">Economía</a>
                 <a href="#familias">Familias</a>
+                <a href="#ubicacion">Ubicación</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header con Carrusel de Imágenes de Fondo -->
+    <!-- Header con Carrusel -->
     <header class="hero-carousel">
-        <!-- Contenedor del Carrusel (atrás del título) -->
         <div class="carousel-background">
             <div class="slide active" style="background-image: url('imagenpalmera/entrada.png');"></div>
             <div class="slide" style="background-image: url('imagenpalmera/calle.jpeg');"></div>
         </div>
         
-        <!-- Capa de sombra verde para asegurar que el texto blanco se lea perfecto -->
         <div class="carousel-overlay"></div>
 
-        <!-- Contenido principal centrado sobre las fotos -->
         <div class="hero-content">
             <span class="hero-badge">MENDOZA • ARGENTINA</span>
             <h1>Tierra de historia, esfuerzo y comunidad</h1>
@@ -54,7 +51,7 @@
 
     <main class="container">
         
-        <!-- Tarjetas de Métricas Rápidas -->
+        <!-- Métricas Rápidas -->
         <section class="metrics-grid">
             <div class="metric-card">
                 <span class="metric-number">1 ha</span>
@@ -74,7 +71,7 @@
             </div>
         </section>
 
-        <!-- Sección Historia -->
+        <!-- 1. Historia -->
         <section id="historia" class="section-block">
             <div class="section-header">
                 <span class="section-tag">NUESTROS ORÍGENES</span>
@@ -90,7 +87,7 @@
             </div>
         </section>
 
-        <!-- Galería de Fotos -->
+        <!-- 2. Galería (Ahora antes de Barrios) -->
         <section id="galeria" class="section-block">
             <div class="section-header">
                 <span class="section-tag">REGISTRO VISUAL</span>
@@ -119,7 +116,7 @@
             </div>
         </section>
 
-        <!-- Barrios -->
+        <!-- 3. Barrios -->
         <section id="barrios" class="section-block">
             <div class="section-header">
                 <span class="section-tag">TERRITORIO</span>
@@ -138,27 +135,8 @@
                 </div>
             </div>
         </section>
-
-        <!-- Mapa Interactivo -->
-        <section id="mapa" class="section-block">
-            <div class="section-header">
-                <span class="section-tag">UBICACIÓN</span>
-                <h2>Encuéntranos en Mendoza</h2>
-            </div>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13410.518652136014!2d-68.8200!3d-32.8900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a2e8e50b10!2sLa%20Palmera%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1es!2sar" 
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
-
-        <!-- Economía -->
+        
+        <!-- 4. Economía -->
         <section id="economia" class="section-block">
             <div class="section-header">
                 <span class="section-tag">PRODUCCIÓN LOCAL</span>
@@ -183,7 +161,7 @@
             </div>
         </section>
 
-        <!-- Familias Destacadas -->
+        <!-- 5. Familias Destacadas -->
         <section id="familias" class="section-block">
             <div class="section-header">
                 <span class="section-tag">NUESTRA GENTE</span>
@@ -216,16 +194,35 @@
             </div>
         </section>
 
+        <!-- 6. Ubicación (Mapa Interactivo) -->
+        <section id="ubicacion" class="section-block">
+            <div class="section-header">
+                <span class="section-tag">UBICACIÓN</span>
+                <h2>Encuéntranos en Mendoza</h2>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13410.518652136014!2d-68.8200!3d-32.8900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a2e8e50b10!2sLa%20Palmera%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1es!2sar" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Visor de Imágenes (Lightbox) -->
+    <!-- Visor Lightbox -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <span class="close-btn">&times;</span>
         <img id="lightbox-img" src="" alt="Ampliada">
         <p id="lightbox-caption"></p>
     </div>
 
-    <!-- Footer Verde Institucional -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <h3>La Palmera</h3>
@@ -236,9 +233,8 @@
         </div>
     </footer>
 
-    <!-- JavaScript para el Carrusel de Fondo y Galería -->
+    <!-- JavaScript -->
     <script>
-        // Lógica del carrusel de imágenes detrás del título
         const slides = document.querySelectorAll('.carousel-background .slide');
         let currentSlide = 0;
 
@@ -248,12 +244,10 @@
             slides[currentSlide].classList.add('active');
         }
 
-        // Cambia la imagen de fondo cada 4 segundos
         if (slides.length > 1) {
             setInterval(nextSlide, 4000);
         }
 
-        // Abrir visor de fotos
         function openLightbox(card) {
             const img = card.querySelector('img');
             const title = card.querySelector('h4');
